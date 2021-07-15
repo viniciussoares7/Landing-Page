@@ -1,0 +1,274 @@
+/*------------------- RESET -----------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+/*------------------- VARIABLES -----------------------*/
+:root {
+  /* Colors */
+  --base-color: hsl(310 36% 57%);
+  --base-color-second: hsl(310 65% 88%);
+  --base-color-alt: hsl(310 57% 53%);
+  --title-color: hsl(310 41% 10%);
+  --text-color: hsla(0, 0%, 46%, 1);
+  --text-color-light: hsla(0, 0%, 98%, 1);
+  --body-color: hsla(0, 0%, 98%, 1);
+
+  /* fonts */
+  --title-font-size: 1.825rem;
+  --subtitle-font-size: 1rem;
+
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
+}
+/*------------------- BASE -----------------------*/
+
+body {
+  font: 400 1rem var(--body-font);
+  color: black;
+  background: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+}
+.title {
+  font: 700 var(--title-font-size) var(--title-font);
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+.button {
+  background-color: var(--base-color);
+  color: var(--text-color-light);
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  font: 500 1rem var(--body-font);
+  transition: background 0.3s;
+}
+.button span {
+  color: var(--body-color);
+}
+.button:hover {
+  background: var(--base-color-alt);
+}
+
+/*------------------- LOGO -----------------------*/
+.logo {
+  color: white;
+  font: 700 1.31rem var(--title-font);
+}
+.logo span {
+  color: #7e08c2a4;
+}
+
+.logo.logo-alt span {
+  color: #7e08c2a4;
+}
+
+/*------------------- LAYOUT -----------------------*/
+
+/* ============== header ==========*/
+#header {
+  border-bottom: 2px solid #7e08c2a4;
+  display: grid;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  background-color: black;
+}
+#header .logo {
+  margin-top: 0.7rem;
+  margin-left: 35rem;
+}
+/* ======== home ==========*/
+#home.home {
+  display: flex;
+}
+#marketing {
+  border-width: 2px;
+  width: 100%;
+  height: 100vh;
+  background-color: peachpuff;
+}
+#marketing .images img {
+  width: 10rem;
+  height: 15rem;
+}
+#dados {
+  border-width: 2px;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  background-color: rgb(255, 255, 255);
+}
+/* marketing */
+
+/* dados */
+#dados .texto-cadastro {
+  color: #7e08c296;
+  height: auto;
+  margin: 2rem;
+  text-align: center;
+  font: 700 2rem var(--title-font);
+}
+
+input {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  background: rgb(53, 53, 53);
+  color: #fff;
+}
+
+form {
+  display: grid;
+  margin-top: 25%;
+}
+
+/* --SWIPER-- */
+
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
+
+/*    ------FOOTER - ------------   */
+
+footer {
+  background: black;
+  border-top: 1px solid #7e08c2a4;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer.section {
+  padding: 4rem 0;
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+footer .brand {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+footer .social i {
+  color: var(--text-color-light);
+  font-size: 1.5rem;
+}
+
+footer .social {
+  display: flex;
+  transition: 0.3s;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-right: 3rem;
+}
+
+.toggle:hover {
+  font-size: 2rem;
+}
+footer .social i.icon-instagram:hover {
+  background-image: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer .social i.icon-facebook:hover {
+  background-image: linear-gradient(
+    45deg,
+    #33b4f0 0%,
+    #3c7de6 25%,
+    #2748dc 50%,
+    #1c1fce 75%,
+    #0400fa 100%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer .social i.icon-youtube:hover {
+  background-image: linear-gradient(45deg, #ff000d 75%, #fa0000 100%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer .social i.icon-github:hover {
+  background-image: linear-gradient(
+    45deg,
+    #33b4f0 0%,
+    #3c7de6 25%,
+    #2748dc 50%,
+    #b91cce 75%,
+    #6000fa 100%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== MARKETING ====== */
+
+#marketing {
+  background-color: black;
+}
+#banner {
+  display: block;
+  margin-left: 12rem;
+  width: 20rem;
+  height: auto;
+}
+
+.swiper-container {
+  width: 30rem;
+  height: auto;
+}
+#photo {
+  width: 15rem;
+  height: 15rem;
+  padding: 0.3rem;
+  border-radius: 1rem;
+}
