@@ -80,7 +80,7 @@ body {
 
 /* ============== header ==========*/
 #header {
-  border-bottom: 2px solid #7e08c2a4;
+  border-bottom: 2px solid #7e08c2;
   display: grid;
   width: 100%;
   top: 0;
@@ -93,9 +93,11 @@ body {
   margin-left: 35rem;
 }
 /* ======== home ==========*/
+/* marketing */
 #home.home {
   display: flex;
 }
+
 #marketing {
   border-width: 2px;
   width: 100%;
@@ -113,9 +115,52 @@ body {
   left: 0px;
   background-color: rgb(255, 255, 255);
 }
-/* marketing */
+
+#marketing {
+  background-color: black;
+}
+#banner {
+  display: block;
+  margin-left: 12rem;
+  width: 20rem;
+  height: auto;
+}
+
+.swiper-container {
+  width: 30rem;
+  height: auto;
+}
+#photo {
+  width: 15rem;
+  height: 15rem;
+  padding: 0.3rem;
+  border-radius: 1rem;
+}
+#textBanner {
+  font: 400 1rem var(--title-font);
+  color: white;
+  text-align: center;
+  display: block;
+  padding-bottom: 1.5rem;
+}
+#textBanner-alt {
+  font: 400 1.5rem var(--title-font);
+  color: #7e08c296;
+  text-align: center;
+  display: block;
+  padding-bottom: 1.5rem;
+}
+#textBanner-alt:hover {
+  transform: translateY(-0.5rem);
+  font: 400 1.8rem var(--title-font);
+  color: #9b3fd1;
+  transition: 0.3s;
+}
 
 /* dados */
+#dados {
+  background-color: black;
+}
 #dados .texto-cadastro {
   color: #7e08c296;
   height: auto;
@@ -125,36 +170,62 @@ body {
 }
 
 input {
-  width: 100%;
+  width: 30rem;
   height: 2rem;
   margin-bottom: 1rem;
   text-align: center;
   border-radius: 0.5rem;
-  background: rgb(53, 53, 53);
+  background: rgb(3, 1, 1);
   color: #fff;
+}
+
+.cadastro {
+  padding-left: 6rem;
 }
 
 form {
   display: grid;
-  margin-top: 25%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+#dadosForm {
+  color: #7e08c2a4;
+}
+#botaoCadastrar {
+  margin-top: 2rem;
+}
+#pronto {
+  color: #b33ef7;
+  font: 700 3rem var(--title-font);
+  text-align: center;
+  padding-top: 8rem;
+}
+#pronto:hover {
+  transition: 0.5s;
+  color: #e8e8e9;
 }
 
 /* --SWIPER-- */
 
 .swiper-slide {
   height: auto;
-  padding: 4rem 1rem;
+  padding: 2rem;
 }
 
 .swiper-pagination-bullet-active {
   background: var(--base-color);
+}
+.swiper-pagination {
+  border: 0.05rem solid #7e08c2a4;
+  background-color: rgba(0, 0, 0, 0.062);
 }
 
 /*    ------FOOTER - ------------   */
 
 footer {
   background: black;
-  border-top: 1px solid #7e08c2a4;
+  border-top: 1px solid #7e08c2;
 }
 footer .container {
   display: flex;
@@ -196,6 +267,7 @@ footer .social {
 
 .toggle:hover {
   font-size: 2rem;
+  transition: 0.3s;
 }
 footer .social i.icon-instagram:hover {
   background-image: linear-gradient(
@@ -210,6 +282,7 @@ footer .social i.icon-instagram:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: 0.3s;
 }
 
 footer .social i.icon-facebook:hover {
@@ -225,6 +298,7 @@ footer .social i.icon-facebook:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: 0.3s;
 }
 
 footer .social i.icon-youtube:hover {
@@ -233,6 +307,7 @@ footer .social i.icon-youtube:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: 0.3s;
 }
 
 footer .social i.icon-github:hover {
@@ -248,27 +323,11 @@ footer .social i.icon-github:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: 0.3s;
 }
 
-/* ===== MARKETING ====== */
-
-#marketing {
-  background-color: black;
-}
-#banner {
-  display: block;
-  margin-left: 12rem;
-  width: 20rem;
-  height: auto;
-}
-
-.swiper-container {
-  width: 30rem;
-  height: auto;
-}
-#photo {
-  width: 15rem;
-  height: 15rem;
-  padding: 0.3rem;
-  border-radius: 1rem;
+#divider {
+  width: 1px;
+  background: linear-gradient(270deg, rgb(4, 0, 255), #7e08c2a4);
+  box-shadow: inset 0 0 1em #7e08c2a4, 0 0 1em rgb(196, 47, 255);
 }
