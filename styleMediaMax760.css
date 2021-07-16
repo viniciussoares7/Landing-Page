@@ -1,0 +1,143 @@
+@media (max-width: 760px) {
+  /* ============== header ==========*/
+  #header {
+    margin-bottom: 2rem;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  #header .logo {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .logo {
+    color: white;
+    font: 700 1rem var(--title-font);
+  }
+
+  /* ====== home ======*/
+  #home.home {
+    display: grid;
+  }
+  #marketing {
+    border-width: 2px;
+    width: 100%;
+    height: 100vh;
+    background-color: peachpuff;
+  }
+  #marketing .images img {
+    width: 10rem;
+    height: 15rem;
+  }
+  #marketing {
+    background-color: black;
+  }
+  #banner {
+    display: grid;
+    margin-left: 20%;
+    margin-top: 40px;
+    width: 20rem;
+    height: auto;
+  }
+  .swiper-container {
+    width: 20rem;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  #photo {
+    width: 15rem;
+    height: 15rem;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+  #textBanner {
+    font: 400 1rem var(--title-font);
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: grid;
+    padding-bottom: 1.5rem;
+  }
+  #textBanner-alt {
+    font: 400 1.5rem var(--title-font);
+    color: #7e08c296;
+    text-align: center;
+    display: block;
+    padding-bottom: 1.5rem;
+  }
+  #textBanner-alt:hover {
+    transform: translateY(-0.5rem);
+    font: 400 1.8rem var(--title-font);
+    color: #9b3fd1;
+    transition: 0.3s;
+  }
+  .swiper-slide {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--base-color);
+  }
+  .swiper-pagination {
+    border: 0.05rem solid #7e08c2a4;
+    background-color: rgba(0, 0, 0, 0.062);
+  }
+  /* = ===== dados =======*/
+  #dados {
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+  }
+  #dados .texto-cadastro {
+    color: #7e08c296;
+    height: auto;
+    padding-top: 3rem;
+    margin: 2rem;
+    text-align: center;
+    font: 700 2rem var(--title-font);
+  }
+
+  input {
+    width: 20rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    background: rgb(3, 1, 1);
+    color: #fff;
+  }
+
+  .cadastro {
+    padding-left: 6rem;
+  }
+
+  form {
+    display: grid;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  #dadosForm {
+    color: #7e08c2a4;
+  }
+  #botaoCadastrar {
+    margin-top: 2rem;
+  }
+  #pronto {
+    color: #b33ef7;
+    font: 700 2.5rem var(--title-font);
+    padding-top: 3rem;
+    padding: 2rem;
+  }
+  #pronto:hover {
+    transition: 0.5s;
+    color: #7e08c2a4;
+  }
+}

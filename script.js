@@ -1,4 +1,5 @@
 /* IMAGES carousel slider swiper */
+
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   pagination: {
@@ -14,7 +15,7 @@ const swiper = new Swiper('.swiper-container', {
 
   breakpoints: {
     767: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       setWrapperSize: true
     }
   }
